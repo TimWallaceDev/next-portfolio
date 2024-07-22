@@ -1,0 +1,114 @@
+@use "../../app/mixins.scss" as *;
+
+
+.projects {
+    @include section;
+    padding: 0 16px;
+
+    @include tablet {
+        padding: 0 64px;
+    }
+
+    @include desktop {
+        padding: 0 128px;
+    }
+
+    &__heading {
+        font-size: 4rem;
+        text-align: center;
+        font-weight: bold;
+        margin: 3rem 0;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        @include tablet {
+            gap: 16px;
+        }
+    }
+}
+
+.project {
+    color: black;
+    display: flex;
+    gap: 16px;
+    padding: 16px 0;
+    flex-direction: column;
+    width: 100%;
+
+    @include tablet {
+        flex-direction: row;
+    }
+
+    @include desktop {
+        padding: 32px;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        color: black;
+        margin: 0;
+        font-weight: bold;
+    }
+
+    &__description {
+        line-height: normal;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 16px;
+
+        @include tablet {
+            flex: 1;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        border: 1px solid black;
+
+        @include tablet {
+            max-width: 300px;
+        }
+    }
+
+    &__live-link {
+        text-decoration: none;
+        color: blue;
+        display: block;
+        margin-top: 8px;
+        width: min-content;
+        text-wrap: nowrap;
+
+        &:hover {
+            color: red;
+        }
+    }
+
+    &__github-link {
+        color: blue;
+        display: block;
+        margin-top: 8px;
+        text-decoration: none;
+        width: min-content;
+        text-wrap: nowrap;
+
+        &:hover {
+            color: red;
+        }
+    }
+
+    &__description {
+        color: black;
+        max-width: 500px;
+        font-size: 1rem;
+        color: #222;
+        margin-top: 8px;
+    }
+}
