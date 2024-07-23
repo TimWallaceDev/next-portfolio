@@ -46,7 +46,7 @@ export function Projects() {
                     <div className="project__left">
                         <div className="project__top">
                             <h4 className="project__title">Human Magic</h4>
-                            <p className="project__description">A Website for local Toronto band "Human Magic".</p>
+                            <p className="project__description">A Website for local Toronto band &quot;Human Magic&quot;.</p>
                         </div>
                         <div className="project__bottom">
                             <a className="project__live-link" href="https://humanmagic.ca" target="_blank" rel="noreferrer">Live Link</a>
